@@ -1,17 +1,12 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes there */
-
-/*
-* main - Entry point
-*
-* Description: This program assigns a random number
-* to the variable n each time is executed.
-* print value of n stauts; 0, negative or positive
-*
-* Return: retun 0 (Success)
-*/
+/**
+ * main - the main fxn
+ * n: the random number generated
+ *
+ * Return: the return for the main fxn
+ */
 int main(void)
 {
 	int n;
