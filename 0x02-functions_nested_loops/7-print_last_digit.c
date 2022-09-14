@@ -1,15 +1,22 @@
-#include "main.h"
+#include"main.h"
+
 /**
- * print_last_digit - fxn prints last digit
- * @n: the number to work on
+ * print_last_digit - print last digit of a number.
  *
- * Return: returns the number
- */
+ * @n: takes number input
+ *
+ * Return: lastDigit
+*/
+
 int print_last_digit(int n)
 {
-	int r;
+	int lastDigit;
 
-	r = n % 10;
-	_putchar(r + '0');
-	return (r);
+	if (n < 0)
+		lastDigit = -1 * (n % 10);
+	else
+		lastDigit = n % 10;
+
+	_putchar(lastDigit + '0');
+	return (lastDigit);
 }
