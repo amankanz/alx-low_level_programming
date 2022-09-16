@@ -2,7 +2,6 @@
 
 /**
 * main - Entry main
-*
 * Return: 0
 */
 
