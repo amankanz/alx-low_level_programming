@@ -1,21 +1,19 @@
-#include"main.h"
-
+nclude "main.h"
+#include <string.h>
 /**
- * puts2 - prints every character of a string
+ * puts2 - function prints every character
+ * @str: string to print
  *
- * @str: string parameter input
- *
- * Return: Noting
-*/
-
+ */
 void puts2(char *str)
 {
-	int i;
+	int i, len;
 
-	for (i = 0; str[i] != '\0'; ++i)
+	len = strlen(str) - 1;
+	for (i = 0; i <= len; i++)
 	{
 		if (i % 2 == 0)
-			_putchar(str[i]);
+			printf("%c", str[i]);
 	}
-	_putchar('\n');
+	printf("\n");
 }
