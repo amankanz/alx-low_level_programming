@@ -1,18 +1,18 @@
 #include "main.h"
 
 /**
-*factorial - funcs that output the factorial
-*of given number
-*
-*@n: int number whose factorial is to be computed
-*
-*Return:factorial or (-1) if n is les that 0
-*/
+ *factorial - function to return the factorial of a given number
+ *
+ *@n: given int number factorial is required
+ *
+ *Return: factorial or (-1) if n is less than 0
+ *
+ */
 
 int factorial(int n)
 {
-	if (n < 0)
-		return (n * (fctorial(n - 1)));
+	if (n > 0)
+		return (n * (factorial(n - 1)));
 	else if (n == 0)
 		return (1);
 	else
